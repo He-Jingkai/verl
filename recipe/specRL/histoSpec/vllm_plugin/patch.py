@@ -39,7 +39,7 @@ def specRL_plugin():
 
     if os.getenv("VLLM_USE_V1") == "0":
         logger.warning(
-            "specRL only supports vLLM V1, but detected V0 engine. "
+            "specRL (histoSpec) only supports vLLM V1, but detected V0 engine. "
             "Ignoring plugin!\n"
             "Hint: To strictly enforce the V1 vLLM engine, please set "
             "VLLM_USE_V1=1."
@@ -51,7 +51,7 @@ def specRL_plugin():
     # elif vllm.__version__.startswith("0.8.3"):
     #     from .v0_8_3 import patch
     else:
-        logger.warning(f"specRL requires vllm==0.10.0 but found vllm=={vllm.__version__}. Ignoring plugin!")
+        logger.warning(f"specRL (histoSpec) requires vllm==0.10.0 but found vllm=={vllm.__version__}. Ignoring plugin!")
         return
 
     # Patches that make later patches work properly.

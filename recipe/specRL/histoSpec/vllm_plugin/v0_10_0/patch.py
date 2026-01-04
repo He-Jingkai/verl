@@ -51,7 +51,7 @@ from vllm.v1.spec_decode.metadata import SpecDecodeMetadata
 from vllm.v1.worker.worker_base import WorkerBase
 
 # Import specRLPatch from the correct location
-from recipe.specRL.vllm_plugin.patch_utils import specRLPatch
+from recipe.specRL.histoSpec.vllm_plugin.patch_utils import specRLPatch
 
 SPEC_START_LEN = 4
 SPECRL_MIN_TOKEN_PROB = 0.1

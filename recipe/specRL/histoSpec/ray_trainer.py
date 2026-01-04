@@ -31,7 +31,7 @@ from omegaconf import OmegaConf
 from torch.utils.data import Dataset, Sampler
 from tqdm import tqdm
 
-from recipe.specRL.cache_manager import CacheManager
+from recipe.specRL.histoSpec.cache_manager import CacheManager
 from verl import DataProto
 from verl.experimental.dataset.sampler import AbstractCurriculumSampler
 from verl.protocol import pad_dataproto_to_divisor, unpad_dataproto
